@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Booking Form</title>
+  </head>
+  <body>
+    <h1>Hotel Booking Form</h1>
+
+    <form action="/book-hotel">
+      <div>
+        <label for="fullName">Full Name: </label>
+        <input
+          id="fullName"
+          type="text"
+          placeholder="Enter your full name"
+          required
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="email">Email: </label>
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="phone">Phone Number: </label>
+        <input
+          id="phone"
+          type="tel"
+          placeholder="Enter your phone number"
+          pattern="\+?[0-9]{3}-?[0-9]{3}-?[0-9]{4}"
+          title="Format: +123-456-7890"
+          required
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="checkin">Check-in Date: </label>
+        <input id="checkin" type="date" required />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="checkout">Check-out Date: </label>
+        <input id="checkout" type="date" required />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="guests">Number of Guests: </label>
+        <input
+          id="guests"
+          type="text"
+          pattern="[1-9]|10"
+          placeholder="1–10"
+          title="Enter a number between 1 and 10"
+          required
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="password">Create a Password: </label>
+        <input
+          id="password"
+          type="password"
+          placeholder="Create a password"
+          title="Minimum 8 characters, including uppercase, lowercase, digit, and special symbol"
+          pattern="(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[@$!%*?&]).{8,}"
+          required
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="breakfast">Include Breakfast: </label>
+        <input id="breakfast" type="checkbox" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="seaView">Need Sea View Room: </label>
+        <input id="seaView" type="checkbox" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="roomType">Room Type:</label>
+        <select id="roomType" required>
+          <option value="">Select room type</option>
+          <option value="single">Single</option>
+          <option value="double">Double</option>
+          <option value="suite">Suite</option>
+        </select>
+      </div>
+
+      <br />
+
+      <div>
+        <label for="payment">Payment Method:</label><br />
+        <input type="radio" id="card" name="payment" required />
+        <label for="card">Credit Card</label>
+        <input type="radio" id="paypal" name="payment" />
+        <label for="paypal">PayPal</label>
+      </div>
+
+      <br />
+      <br />
+
+      <div>
+        <button type="reset">Reset</button>
+        <button type="submit">Book Now</button>
+      </div>
+    </form>
+  </body>
+</html>
