@@ -1,0 +1,93 @@
+/* Общие стили для всей страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Заголовок */
+  h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Стили для формы */
+  form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  /* Стили для каждого блока с полем */
+  form div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Стили для label */
+  label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #34495e;
+  }
+  
+  /* Стили для input и select */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="password"],
+  select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  /* Чекбоксы и радиокнопки */
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+  }
+  
+  /* Кнопки */
+  button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="reset"] {
+    background-color: #e74c3c;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  button[type="reset"]:hover {
+    background-color: #c0392b;
+  }
+  
